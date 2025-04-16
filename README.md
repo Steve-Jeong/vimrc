@@ -7,7 +7,7 @@ Follow these steps to set up the Vim configuration from [Steve-Jeong/vimrc](http
 1. **Clone the repository**  
    Run this command in your root folder:
    ```bash
-   npx degit https://github.com/Steve-Jeong/vimrc.git .
+   npx degit https://github.com/Steve-Jeong/vimrc.git . --force
    rm README.md
    ```
 
