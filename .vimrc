@@ -34,7 +34,7 @@ let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q" 
 
 " Optionally reset the cursor on start: 
-augroup myCmds 
+augroup myCmds
 au! 
 autocmd VimEnter * silent !echo -ne "\e[2 q" 
 augroup END 
@@ -67,7 +67,7 @@ set backspace=indent,eol,start   " allow backspacing over everything in insert m
 "set autoindent        " allow backspacing over everything in insert mode 
 "set nu 
 
-set noai nocin inde= 
+set noai nocin inde=
 
 " window와 vim간 clipboard 공유 
 "set clipboard=unnamedplus  " for Linux 
@@ -104,16 +104,16 @@ set laststatus=2 " turn on bottom bar
 
 " NERDTree용 단축키 지정. F9토글. 윈도우사이는 C-W, w(또는 방향키) 
 
-nmap <F9> :NERDTree<CR> 
-nmap <F9> :NERDTreeToggle<CR> 
+nmap <F9> :NERDTree<CR>
+nmap <F9> :NERDTreeToggle<CR>
 
 
-" Start interactive EasyAlign in visual mode (e.g. vipga) 
-xmap ga <Plug>(EasyAlign) 
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
 
 
-" Start interactive EasyAlign for a motion/text object (e.g. gaip) 
-nmap ga <Plug>(EasyAlign) 
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
 
 filetype plugin on 
@@ -122,64 +122,64 @@ filetype plugin on
 let mapleader=" "      "mapleader key를 space key로 지정 
 
 nmap <leader>n :NERDTreeToggle<cr> 
-noremap <C-h> <C-w>h 
-noremap <C-j> <C-w>j 
-noremap <C-k> <C-w>k 
-noremap <C-l> <C-w>l 
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
 
 " <C-f>는 one page forward라서 다른 키로 지정하려고 하는데 <A-f>, <C-S-f> 등 안 먹힘 
 
-" nnoremap <C-A-f> :NERDTreeFind<CR> 
+" nnoremap <C-A-f> :NERDTreeFind<CR>
 
 set timeout timeoutlen=1000     "inoremap key의 대기시간 설정 
 
 " Easy Motion : 일반적으로 쓰는 경우 
-map <leader><leader>f <Plug>(easymotion-overwin-f) 
-map <leader><leader>w <Plug>(easymotion-overwin-w) 
-map <leader><leader>. <Plug>(easymotion-repeat) 
+map <leader><leader>f <Plug>(easymotion-overwin-f)
+map <leader><leader>w <Plug>(easymotion-overwin-w)
+map <leader><leader>. <Plug>(easymotion-repeat)
 
 " Minimal Configuration for easymotion : 키 조합을 최소로 하는 easymotion 
-let g:EasyMotion_do_mapping = 0 
+let g:EasyMotion_do_mapping = 0
 
 " s for one character search overwin(소문자 s) 
-nmap s <Plug>(easymotion-overwin-f) 
+nmap s <Plug>(easymotion-overwin-f)
 
 " S for two character search overwin(대문자 S) 
-nmap S <Plug>(easymotion-overwin-f2) 
+nmap S <Plug>(easymotion-overwin-f2)
 
 " tab설정 
-nmap <leader>tn :tabn<CR> 
-nmap <leader>tp :tabp<CR> 
-nmap <leader>tt :tabnew<CR> 
-nmap <leader>to :tabo<CR> 
+nmap <leader>tn :tabn<CR>
+nmap <leader>tp :tabp<CR>
+nmap <leader>tt :tabnew<CR>
+nmap <leader>to :tabo<CR>
 
 
-let g:ctrlp_working_path_mode = 'ca' 
-let g:ctrlp_match_window = 'results:20' 
+let g:ctrlp_working_path_mode = 'ca'
+let g:ctrlp_match_window = 'results:20'
 
-"let g:ctrlp_user_command = 'ls -a %s' 
+"let g:ctrlp_user_command = 'ls -a %s'
 
-" Color scheme for seoul256.vim(START) 
+" Color scheme for seoul256.vim(START)
 
-" Unified color scheme (default: dark) 
+" Unified color scheme (default: dark)
 
-" Range :233(darkest) ~ 239(lightest) 
+" Range :233(darkest) ~ 239(lightest)
 
-" default : 237 
+" default : 235 
 
-let g:seoul256_background = 233 
-colo seoul256 
+let g:seoul256_background = 235
+colo seoul256
 
 
 " " Light color scheme 
 
 " " Range :252(darkest) ~ 256(lightest) 
 
-" " default : 253 
+" " default : 254
 
-" let g:seoul256_light_background = 252 
+" let g:seoul256_light_background = 254
 
-" colo seoul256-light 
+" colo seoul256-light
 
 "  
 
