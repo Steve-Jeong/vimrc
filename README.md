@@ -19,7 +19,7 @@ Follow these steps to set up the Vim configuration from [Steve-Jeong/vimrc](http
    cd ..
    rm -rf vimrc
    ```
-2. Install vim-plug
+2. **Install vim-plug**
    ```bash
    curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
    ```
