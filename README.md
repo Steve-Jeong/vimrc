@@ -8,7 +8,18 @@ Follow these steps to set up the Vim configuration from [Steve-Jeong/vimrc](http
    Run this command in your root folder:
    ```bash
    npx degit https://github.com/Steve-Jeong/vimrc.git .
+   rm README.md
    ```
+
+   Or, Run this command in your root folder to clone .vimrc file into the vimrc folder:
+   ```bash
+   git clone https://github.com/Steve-Jeong/vimrc.git vimrc
+   cd vimrc
+   cp .vimrc ..
+   cd ..
+   rm -rf vimrc
+   ```
+   
 
 2. **Launch Vim**  
    Start Vim by running:
