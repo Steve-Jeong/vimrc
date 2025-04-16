@@ -19,22 +19,26 @@ Follow these steps to set up the Vim configuration from [Steve-Jeong/vimrc](http
    cd ..
    rm -rf vimrc
    ```
-   
+2. Install vim-plug
+   ```bash
+   curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   ```
 
-2. **Launch Vim**  
+
+3. **Launch Vim**  
    Start Vim by running:
    ```bash
    vim
    ```
 
-3. **Install plugins**  
+4. **Install plugins**  
    Inside Vim, execute:
    ```
    :PlugInstall
    ```
    (This will install all the configured plugins)
 
-4. **Restart Vim**  
+5. **Restart Vim**  
    Quit Vim with `:q` and relaunch:
    ```bash
    vim
